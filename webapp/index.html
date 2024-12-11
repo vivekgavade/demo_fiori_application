@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPUI5 Demo Project</title>
+    <script id="sap-ui-bootstrap" 
+            src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m" 
+            data-sap-ui-theme="sap_horizon" 
+            data-sap-ui-resourceroots='{
+                "infy.com" : "./"
+            }' 
+            data-sap-ui-bindingSyntax="complex">
+    </script>
+
+    <script>
+        // var oComp = new sap.ui.core.ComponentContainer({
+        //     name: "infy.com"
+        // });
+
+        // oComp.placeAt("content");
+
+        sap.ui.core.Component.create({
+            name: 'infy.com',
+            manifestFirst: true,
+            async: true
+        }).then(function (oComponent) {
+            var oComponentContainer = new sap.ui.core.ComponentContainer({
+                component: oComponent
+            });
+            oComponentContainer.placeAt("content");
+        }).catch(function (oError) {
+            console.error("Error during component creation:", oError);
+        });
+        
+    </script>
+</head>
+
+<body class="sapUiBody">
+    <div id="content"></div>
+</body>
+
+</html>

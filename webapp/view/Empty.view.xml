@@ -1,0 +1,6 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m"
+          controllerName="infy.com.controller.Empty">
+    <Page title="Empty View">
+        
+    </Page>
+</mvc:View>
