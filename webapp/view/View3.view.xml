@@ -1,0 +1,10 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns="sap.m"
+          controllerName="infy.com.controller.View3">
+    <Page id="idPage3" title="View 3 - The Supplier Data" showNavButton="true" navButtonPress="onBack">
+        <content>
+            <ObjectHeader title="{name}" intro="{sinceWhen}" number="{contactNo}" numberUnit="{contactPerson}"
+                          icon="sap-icon://supplier">
+            </ObjectHeader>
+        </content>
+    </Page>
+</mvc:View>

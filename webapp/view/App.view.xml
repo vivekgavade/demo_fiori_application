@@ -1,0 +1,5 @@
+<mvc:View controllerName="infy.com.controller.App" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:core="sap.ui.core"
+	      displayBlock="true" height="100%" busyIndicatorDelay="0">
+	<SplitApp id="idAppCon"></SplitApp>
+	<!-- <App id="idAppCon"></App> -->
+</mvc:View>
